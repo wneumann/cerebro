@@ -27,7 +27,7 @@ if options.full || !(append || options.replacement) {
   append = true
 }
 
-print(options)
+//print(options)
 
 if options.double {
   if !(options.replacement && append) { print("-double flag requires at least one of the append flags and the replacement flag to be set (implicitly or explicitly)."); exit(1) }
@@ -49,7 +49,7 @@ if let inputFile = options.inputFile {
     if !nextLine.isEmpty { pristine.insert(nextLine) } }
 }
 
-print("pristine: \(pristine))")
+//print("pristine: \(pristine))")
 
 func appendNumbers(_ input: Set<String>) -> Set<String> {
   input.reduce(into: Set<String>()) { currentSet, base in
